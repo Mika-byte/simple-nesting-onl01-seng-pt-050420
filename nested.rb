@@ -44,8 +44,9 @@ end
 
 alan_kay_is_known_for
 
+
 def dennis_ritchies_language
-	programmer_hash = 
+	programmer_hash =
  		{
         :grace_hopper => {
           :known_for => "COBOL",
@@ -60,6 +61,9 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
+# there are two ways of solving this:
+# programmer_hash[:dennis_ritchie][:languages].first
+	programmer_hash[:dennis_ritchie][:languages][0]
 end
 
 def adding_matz
